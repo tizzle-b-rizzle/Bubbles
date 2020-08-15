@@ -1,0 +1,45 @@
+/*#region reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /*#endregion*/
+
+  #page-grid {
+      height:100%;
+      max-height: 100%;
+      width:100%;
+      max-width: 100%;
+      display:grid;
+      grid-auto-rows: 1vh;
+      grid-auto-columns:1vw;
+  }
+
+  #bubble {
+      height:200px;
+      width:200px;
+      grid-row:10;
+      grid-column: 30;
+      border:1px solid black;
+      border-radius:50%;
+      background: radial-gradient(circle at 20%, red, blue, pink);
+      animation-name: test-move;
+      animation-iteration-count: 0;
+      animation-duration: 5s;
+  }
+
+  @keyframes test-move {
+      0% {
+          grid-row:10;
+          grid-column:10;
+      }
+      50% {
+          grid-row:40;
+          grid-column:40;
+      }
+      100% {
+          grid-row:70;
+          grid-column:70;
+      }
+  }
