@@ -2,11 +2,10 @@ function remove() {
     bubble = document.getElementById("bubble");
     bubble.remove();
 }
-    document.addEventListener("DOMContentLoaded", function createBubble(){
-    const bubble = document.createElement("div");
-    bubble.id = "bubble";
-    bubble.className ="bubble-class";
-    document.body.appendChild(bubble);
-}, false)
-
-
+    const jsBubble = document.createElement("div");
+    jsbBubble.id = "bubble";
+    jsBubble.className ="bubble-class";
+    
+function createBubble() {
+    document.getElementById("page-grid").appendChild(bubble);
+}
