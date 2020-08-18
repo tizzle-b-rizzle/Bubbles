@@ -28,8 +28,6 @@
   .bubble-class {
       height:200px;
       width:200px;
-      grid-row:10;
-      grid-column: 30;
       border:1px solid black;
       border-radius:50%;
       background: radial-gradient(circle at 20%, red, blue, pink);
