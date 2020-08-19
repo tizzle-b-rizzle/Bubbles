@@ -31,6 +31,20 @@
       border:1px solid black;
       border-radius:50%;
       background: radial-gradient(circle at 20%, red, blue, pink);
+      opacity:50%;
   }
+  #bubble:active {
+      animation: pop 0.5s cubic-bezier(0.36, 0.87, 0.18, 0.99) forwards;
+  }
+
+@keyframes pop {
+    from {
+        transform:translateZ(0) scale(1,1);
+    }
+    to {
+        opacity:0;
+        transform:translateZ(0) scale(1.75,1.75);
+    }
+}
 
  

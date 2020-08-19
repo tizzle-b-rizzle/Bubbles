@@ -8,7 +8,7 @@ function createBubble() {
     jsBubble.style.gridRow = randomNumber; //determines the row of the bubble when it's generated
     jsBubble.style.gridColumn = randomNumber; //determines the column of the bubble when it's generated
     jsBubble.onclick = function removeBubble() { //this seems to only work when you do the onclick like this
-    document.getElementById("page-grid").removeChild(jsBubble);
+    document.getElementById("bubble").remove(); //removes the bubble, but currently only in the order they were created
 } ;
 
 }
