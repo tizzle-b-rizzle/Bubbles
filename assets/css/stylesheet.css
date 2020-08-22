@@ -26,8 +26,8 @@
   }
 
   .bubble-class {
-      height:200px;
-      width:200px;
+      height:10vw;
+      width:10vw;
       border:1px solid black;
       border-radius:50%;
       background: radial-gradient(circle at 20%, red, blue, pink);
@@ -46,5 +46,7 @@
         transform:translateZ(0) scale(1.75,1.75);
     }
 }
+
+
 
  
