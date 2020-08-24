@@ -17,8 +17,8 @@
   }
 
   #button {
-      height:100px;
-      width:100px;
+      height:5vw;
+      width:5vw;
       top:0;
       left:0;
       background-color: brown;
@@ -33,8 +33,8 @@
       background: radial-gradient(circle at 20%, red, blue, pink);
       opacity:50%;
   }
-  #bubble:active {
-      animation: pop 0.1s cubic-bezier(0.36, 0.87, 0.18, 0.99) forwards;
+  .bubble-class:active {
+      animation: pop 0.5s cubic-bezier(0.36, 0.87, 0.18, 0.99) forwards;
   }
 
 @keyframes pop {

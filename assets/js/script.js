@@ -10,9 +10,13 @@ function createBubble() {
     jsBubble.style.gridColumn = randomNumber; //determines the column of the bubble when it's generated
     var element = document.getElementById("bubble" + noOfBubbles); //each bubble
     element.onclick = function removeBubble() { //when a bubble is clicked, that pubble us removes
+        var audio = document.getElementById("pop-noise");//works but a bit slow
+        audio.play();
         noOfBubbles -= 1;
         this.remove()
     }
 } ;
+
+//make it so every x seconds the bubbles move up/down and left/right and when they hit the floor they pop (do this by increasing the grid row/column)
 
 
