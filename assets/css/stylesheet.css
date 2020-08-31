@@ -32,10 +32,15 @@
       border-radius:50%;
       background: radial-gradient(circle at 20%, red, blue, pink);
       opacity:50%;
+      animation-iteration-count: 1;
+      animation-duration: 0.1s;
+      animation-direction: forwards;
+      animation-timing-function: cubic-bezier(0.36, 0.87, 0.18, 0.99);
   }
-  .bubble-class:active {
-      animation: pop 0.5s cubic-bezier(0.36, 0.87, 0.18, 0.99) forwards;
-  }
+
+  /*.bubble-class:active {
+    animation: pop 1s cubic-bezier(0.36, 0.87, 0.18, 0.99) forwards; 
+  }*/
 
 @keyframes pop {
     from {
@@ -46,7 +51,3 @@
         transform:translateZ(0) scale(1.75,1.75);
     }
 }
-
-
-
- 

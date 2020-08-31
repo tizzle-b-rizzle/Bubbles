@@ -9,9 +9,12 @@ function createBubble() {
     jsBubble.style.gridRow = randomNumber; //determines the row of the bubble when it's generated
     jsBubble.style.gridColumn = randomNumber; //determines the column of the bubble when it's generated
     var element = document.getElementById("bubble" + noOfBubbles); //each bubble
-    element.onclick = function removeBubble() { //when a bubble is clicked, that pubble us removes
+    element.onclick = async function removeBubble() { //when a bubble is clicked, that pubble us removes
         var audio = document.getElementById("pop-noise");//works but a bit slow
-        audio.play();
+        if (this.style.animationName != "pop") {
+            this .style.animationName = "pop";
+            await audio.play();
+        }
         noOfBubbles -= 1;
         this.remove()
     }
